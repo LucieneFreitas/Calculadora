@@ -1,0 +1,45 @@
+====== HTML =========
+tr --> para adicionar linhas
+td --> inseri colunas
+row span --> para ocupar linhas
+col sapn --> para ocupar colunas
+
+=======JavaScript============
+**querySelector()** -->  permite que os seletores CSS sejam usados no JavaScript;
+
+**innerHTML** --> utilizado para receber o conteúdo de um elemento HTML.
+ex: let conteudo = document.element.innerHTML
+
+**innerHTML** --> utilizado para adicionar um conteúdo a um elemento HTML
+ex: document.element.innerHTML = conteudo
+
+
+-->Toda vez que inserir algum número, estou devolvendo nosso proprio num para o nosso HTML
+**document.querySelector('.tela').innerHTML += num;**
+sinal de + é para concatenar os números.
+
+
+-->Botão **C** receberá a função de apagar:
+function clean(){
+    document.querySelector('.tela').innerHTML = ''; 
+}
+Observe que vai devolver vazio entre as aspas.
+
+
+-->Botão **<** função de voltar 
+dentro da function terá uma variavel para guardar o que foi digitado anteriormente.
+function back(){
+    let tela = document.querySelector('.tela').innerHTML;
+}
+**substring()** extrair uma sequência de caracteres de uma string.
+geralmente recebe dois parametros, o 1º onde se iniciará e o 2º onde terminará.
+
+
+-->**eval()** A função Eval avalia o expressão de cadeia de caracteres e retorna seu valor. Por exemplo, Eval("1 + 1") retorna 2
+
+
+
+
+
+https://www.youtube.com/watch?v=RD1c4IhUe7Q
+
